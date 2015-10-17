@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicleConfiguration>
+
+	<service type="org.car2x.veins.modules.application.artery.CaService" name="Cooperative Awareness">
+			<listener port="2001" />
+	</service>
+	
+	<service type="org.car2x.veins.modules.application.artery.EaService" name="Environment Awareness">
+			<listener port="2008" />
+	</service>
+	
+	<service type="org.car2x.veins.modules.application.artery.Logger" name="Logger">
+			<listener port="2002" />
+	</service>
+	
+	<sensorset type="org.car2x.veins.modules.application.artery.sensorset.RadarSet">
+	<filters>
+		<!--name pattern="8"/-->
+		<visualization>
+			<showObjectsInSensorRange value="false"/>
+			<showObstaclesInSensorRange value="true"/>
+			<showSensorCone value="true"/>
+			<showLineOfSight value="false"/>
+		</visualization>
+	</filters>
+	
+	</sensorset>
+
+</vehicleConfiguration>
+
